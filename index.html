@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grading System</title>
+  </head>
+  <body>
+    <h1>Welcome to our Grading System</h1>
+  </body>
+  <script>
+    const grade = prompt("Enter result");
+
+    function studentGradingSystem(grade) {
+      if (grade >= 80 && grade <= 100) {
+        alert(`Your made an A with this grade ${grade}`);
+      } else if (grade >= 60 && grade <= 79) {
+        alert(`Your made B with this grade ${grade}`);
+      } else if (grade >= 40 && grade <= 59) {
+        alert(`You made C with this grade ${grade}`);
+      } else if (grade >= 30 && grade <= 39) {
+        alert(`You made D with this grade ${grade}`);
+      } else if (grade >= 20 && grade <= 29) {
+        alert(`You made E with this grade ${grade}`);
+      } else if (grade >= 0 && grade <= 19) {
+        alert(`You made F with this grade ${grade}`);
+      } else {
+        alert(`Sorry We do not have the grade with this ${grade}`);
+      }
+    }
+
+    studentGradingSystem(grade);
+  </script>
+</html>
